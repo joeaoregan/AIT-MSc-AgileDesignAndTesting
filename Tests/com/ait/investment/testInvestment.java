@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import com.ait.ex1.investment.InvestmentValue;
+
 class testInvestment {
 	
 	InvestmentValue investmentValue = new InvestmentValue();

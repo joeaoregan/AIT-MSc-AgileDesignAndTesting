@@ -7,6 +7,8 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.runner.RunWith;
 
+import com.ait.ex1.investment.InvestmentValue;
+
 @RunWith(JUnitParamsRunner.class)
 public class InvestmentValueTest {
 	private final int VALID_TERM=4;

@@ -1,4 +1,4 @@
-package com.ait.investment.ex7;
+package com.ait.ex7.investment;
 
 public class InvestmentValue {
 	private final static double RATE1=0.02;

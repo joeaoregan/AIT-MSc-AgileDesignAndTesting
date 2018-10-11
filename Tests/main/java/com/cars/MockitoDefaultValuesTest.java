@@ -1,12 +1,14 @@
 /*
  * L5S59
+ * Mockito - default values returned
  * 11/10/2018
  */
 package main.java.com.cars;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.mockito.Mockito.*;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
 
 import org.junit.jupiter.api.Test;
 

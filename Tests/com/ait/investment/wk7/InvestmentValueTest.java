@@ -14,7 +14,7 @@ import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.runner.RunWith;
 
-import com.ait.investment.ex7.InvestmentValue;
+import com.ait.ex7.investment.InvestmentValue;
 
 @RunWith(JUnitParamsRunner.class)
 public class InvestmentValueTest {
