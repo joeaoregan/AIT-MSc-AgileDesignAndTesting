@@ -19,12 +19,12 @@ class StringReverseTest {
 	void testEmptyString() {
 		assertEquals("", StringReverse.reverse(""));
 	}
-	
+
 	@Test
 	void testStringWithOddNumberOfUppercaseCharacters() {
 		assertEquals("ASS", StringReverse.reverse("SSA"));
 	}
-	
+/*
 	@Test
 	void testStringWithEvenNumberOfCharactersWhichAreAMixOfUppercaseAndLowercase() {
 		assertEquals("AaSs", StringReverse.reverse("sSaA"));
@@ -48,5 +48,6 @@ class StringReverseTest {
 	@Test
 	void testNumericData() {
 		assertEquals("12345", StringReverse.reverse("54321"));
-	} 
+	}
+*/
 }
