@@ -1,3 +1,10 @@
+/*
+ * Joe O'Regan
+ * A00258304
+ * Week 5 - Exercise 7
+ * L5S18-21
+ * 11/10/2018
+ */
 package com.ait.investment.wk7;
 
 import static org.junit.Assert.*;
@@ -15,6 +22,8 @@ public class InvestmentValueTest {
 	private final int VALID_INVESTMENT=2000;
 	
 	InvestmentValue iv = new InvestmentValue();
+	
+	/* Test Valid Input */
 	
 	@Parameters
 	private static final Object[] getValidInvestmentAmounts(){
@@ -41,10 +50,9 @@ public class InvestmentValueTest {
 	public void testValidTermLength(int investment, int term, double finalAmount) {
 		assertEquals(finalAmount, InvestmentValue.calculateInvestmentValue(term,investment),0.01);
 	}
-	
-	
 
-
+	/* Test Invalid Input */
+	
 	@Parameters
 	private static final Object[] getInvalidInvestmentAmounts() {
 		return new Integer[][] {{100},{200},{20000}};
@@ -54,8 +62,6 @@ public class InvestmentValueTest {
 	private static final Object[] getInvalidTermAmounts() {
 		return new Integer[][] {{1},{2},{11},{12}};
 	}
-	
-	
 	
 	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "getInvalidTermAmounts")
