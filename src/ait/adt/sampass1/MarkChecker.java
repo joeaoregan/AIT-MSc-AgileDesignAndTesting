@@ -1,3 +1,9 @@
+/*
+ * Joe O'Regan
+ * A00258304
+ * 15/10/2018
+ * Sample Assessment 2 Part 1
+ */
 package ait.adt.sampass1;
 
 public class MarkChecker {

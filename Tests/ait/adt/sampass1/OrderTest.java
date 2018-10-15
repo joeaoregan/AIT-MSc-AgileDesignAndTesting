@@ -15,12 +15,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitParamsRunner.class)
 public class OrderTest {
-
-//	private final int VALID_QUANTITY=10;
 	
 	Order order = new Order();
-	
-	/* Test Valid Input */
 	
 	@Parameters
 	private static final Object[] getValidQuantities(){
@@ -42,6 +38,7 @@ public class OrderTest {
 				$(3)
 		);
 	}
+	
 	@Parameters
 	private static final Object[] getInvalidQuantitiesMax(){
 		return $(
@@ -53,8 +50,8 @@ public class OrderTest {
 	
 	@Test
 	@Parameters(method="getValidQuantities")
-	public void testValidOrderQuantity(int quantity, double result) {
-		assertEquals(result, order.calculateOrderTotal(quantity),0.01);
+	public void testValidOrderQuantity(int quantity, double total) {
+		assertEquals(total, order.calculateOrderTotal(quantity),0.01);
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
