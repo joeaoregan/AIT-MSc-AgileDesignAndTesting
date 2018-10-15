@@ -5,8 +5,6 @@ public class InvestmentValue {
 	private final static double RATE2=0.05;
 	private final static double RATE3=0.07;
 	
-	
-
 	public static double calculateInvestmentValue(int term, int startAmount){
 		double finalAmount=0;
 		

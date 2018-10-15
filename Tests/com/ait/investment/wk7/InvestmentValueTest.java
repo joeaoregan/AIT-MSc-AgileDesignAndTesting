@@ -39,6 +39,20 @@ public class InvestmentValueTest {
 		);
 	}
 	
+	/* Test Invalid Input */
+	
+	@Parameters
+	private static final Object[] getInvalidInvestmentAmounts() {
+		return new Integer[][] {{100},{200},{20000}};
+	}
+	
+	@Parameters
+	private static final Object[] getInvalidTermAmounts() {
+		return new Integer[][] {{1},{2},{11},{12}};
+	}
+	
+	
+	
 	@Test
 	@Parameters(method="getValidInvestmentAmounts")
 	public void testValidInvestmentAmounts(int investment, int term, double finalAmount) {
@@ -51,17 +65,6 @@ public class InvestmentValueTest {
 		assertEquals(finalAmount, InvestmentValue.calculateInvestmentValue(term,investment),0.01);
 	}
 
-	/* Test Invalid Input */
-	
-	@Parameters
-	private static final Object[] getInvalidInvestmentAmounts() {
-		return new Integer[][] {{100},{200},{20000}};
-	}
-	
-	@Parameters
-	private static final Object[] getInvalidTermAmounts() {
-		return new Integer[][] {{1},{2},{11},{12}};
-	}
 	
 	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "getInvalidTermAmounts")
