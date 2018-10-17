@@ -16,9 +16,17 @@ public class MarkChecker {
 //		System.out.println("checkMarks()");
 		int totalScore1 = 0, totalScore2 = 0;
 		
-		if (markerOne.length != 5 || markerTwo.length != 5) {
+//		if (markerOne.length != 5 || markerTwo.length != 5) {
+//			throw new IllegalArgumentException(
+//				"illegal array length, array must contain 5 values");
+//		}
+
+		if (markerOne.length != 5) {
 			throw new IllegalArgumentException(
-				"illegal array length, array must contain 5 values");
+				"illegal array length, 1st array must contain 5 values");
+		} else if (markerTwo.length != 5) {
+			throw new IllegalArgumentException(
+				"illegal array length, 2nd array must contain 5 values");
 		}
 		
 		try {
@@ -32,6 +40,7 @@ public class MarkChecker {
 				throw new IllegalArgumentException(
 						"illegal mark: [" + markerOne[i] + "], at array position: [" + i + "], max value: 20");
 			}
+			
 			if (markerTwo[i] < 0) {
 				throw new IllegalArgumentException(
 						"illegal mark: [" + markerTwo[i] + "], at array position: [" + i + "], min value: 0");

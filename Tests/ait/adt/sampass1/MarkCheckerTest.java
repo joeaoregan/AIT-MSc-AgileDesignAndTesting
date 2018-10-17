@@ -32,10 +32,17 @@ public class MarkCheckerTest {
 	@Parameters
 	private static final Object[] getInvalidArraySize(){
 		return $(
-				$(new int[] {14,15,16,17}, new int[] {14,15,16,17,18}),       
-				$(new int[] {15,16,17}, new int[] {15,16,17}),        
+				$(new int[] {14,15,16,17}, new int[] {14,15,16,17,18}), 
+				$(new int[] {14,15,16,17,18}, new int[] {14,15,16,17}),    
+				
 				$(new int[] {16,17,18,19,20,16}, new int[] {16,17,18,19,20}),
 				$(new int[] {16,17,18,19,20}, new int[] {15,16,17,18,19,20})
+				
+//				$(new int[] {15,16,17}, new int[] {15,16,17}),  
+//				$(new int[] {15,16,17,18,19,20}, new int[] {15,16,17,18,19,20}),   
+//				
+//				$(new int[] {16,17,18,19,20,16}, new int[] {16,17,18}),
+//				$(new int[] {16,17,18}, new int[] {15,16,17,18,19,20})
 		);
 	}
 	
