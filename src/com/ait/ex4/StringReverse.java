@@ -17,10 +17,11 @@ public class StringReverse {
 		
 		StringBuilder reversedString = new StringBuilder(s.length());
 
+		//for (int i = tempArray.size() - 1; i >= 0; i--) {
 		for (int i = tempArray.size() - 1; i > 0; i--) {
 			reversedString.append(tempArray.get(i));
 		}
-		
+		System.out.println("reverse: " + reversedString.toString());
 		return reversedString.toString();
 	}
 

@@ -1,4 +1,4 @@
-package com.ait.investment;
+package com.ait.ex1.investment;
 
 import static org.junit.jupiter.api.Assertions.*;
 

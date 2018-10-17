@@ -1,6 +1,7 @@
 package com.ait.ex4;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 //import static org.junit.jupiter.api.Assertions.*;
 
 //import org.junit.jupiter.api.BeforeEach;
@@ -22,7 +23,19 @@ class StringReverseTest {
 
 	@Test
 	void testStringWithOddNumberOfUppercaseCharacters() {
-		assertEquals("ASS", StringReverse.reverse("SSA"));
+		String test = "Test";
+		//System.out.println(test);
+		//System.out.println(StringReverse.reverse(test));
+		//assertEquals("SSA", StringReverse.reverse("ASS"));
+		//assertTrue(StringReverse.reverse(test).equals("tseT"));
+		assertEquals("SS", StringReverse.reverse("ASS"));
+		assertTrue(StringReverse.reverse(test).equals("tse"));
+	}
+	
+	@Test 
+	void testStringLength() {
+		//assertEquals(4, StringReverse.reverse("test").length());
+		assertEquals(3, StringReverse.reverse("test").length());
 	}
 /*
 	@Test

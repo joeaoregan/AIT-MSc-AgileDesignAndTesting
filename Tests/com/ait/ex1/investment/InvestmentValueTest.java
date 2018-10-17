@@ -1,4 +1,4 @@
-package com.ait.investment;
+package com.ait.ex1.investment;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -6,8 +6,6 @@ import static junitparams.JUnitParamsRunner.$;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.runner.RunWith;
-
-import com.ait.ex1.investment.InvestmentValue;
 
 @RunWith(JUnitParamsRunner.class)
 public class InvestmentValueTest {
