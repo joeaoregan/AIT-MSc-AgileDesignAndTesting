@@ -4,7 +4,7 @@
  * 15/10/2018
  * Sample Assessment 2 Part 1
  */
-package ait.adt.sampass1;
+package ait.adt.sampass2;
 
 public class Order {
 	public double calculateOrderTotal(int numCartridge) {

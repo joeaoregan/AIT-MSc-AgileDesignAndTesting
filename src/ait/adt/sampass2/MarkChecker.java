@@ -4,7 +4,7 @@
  * 15/10/2018
  * Sample Assessment 2 Part 1
  */
-package ait.adt.sampass1;
+package ait.adt.sampass2;
 
 public class MarkChecker {
 	private final static int FLAG_OK=0;
