@@ -2,7 +2,7 @@
  * Lec5 jUnit and TDD - S18
  * Testing Expected Exceptions
  */
-package com.ait.expected_exceptions;
+package ait.adt.lec5.expected_exceptions;
 
 public class Money2 {
 	int amount;

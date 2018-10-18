@@ -3,7 +3,8 @@
  * 11/10/2018
  * Lec5: S28
  */
-package main.java.com.unittestex2;
+package ait.adt.lec5.test_fixtures;
+//package main.java.com.unittestex2;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

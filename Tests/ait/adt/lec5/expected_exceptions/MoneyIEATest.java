@@ -2,7 +2,7 @@
  * Lec5 jUnit and TDD - S19
  * Testing Expected Exceptions
  */
-package com.ait.expected_exceptions;
+package ait.adt.lec5.expected_exceptions;
 
 import org.junit.Test;
 import junitparams.JUnitParamsRunner;

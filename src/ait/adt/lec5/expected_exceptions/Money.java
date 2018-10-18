@@ -6,7 +6,7 @@
  * Money.java
  * Testing: ex3
  */
-package com.ait.expected_exceptions;
+package ait.adt.lec5.expected_exceptions;
 
 public class Money {
 	private final int amount;
