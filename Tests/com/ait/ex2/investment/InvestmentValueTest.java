@@ -3,20 +3,26 @@
  * A00258304
  * Exercise 1 - Unit Testing with No Collaborators Investment Calculator
  */
-package com.ait.ex1.investment;
+package com.ait.ex2.investment;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class InvestmentValueTest {
 
-	InvestmentValue iv = new InvestmentValue();
+	InvestmentValue iv;
+	
+	@BeforeEach
+	public void setup() {
+		iv = new InvestmentValue();
+	}
 	
 	@Test
 	void testValidAmountLessThan3000() {
 		//assertEquals(1061.21, iv.calculateInvestmentValue(3,1000), 1.01);
-		assertEquals(1061.21, InvestmentValue.calculateInvestmentValue(3,1000), 1.01);
+		assertEquals(1061.21, InvestmentValue.calculateInvestmentValue(3,1000), 1.01);	// call static function
 	}
 
 	@Test

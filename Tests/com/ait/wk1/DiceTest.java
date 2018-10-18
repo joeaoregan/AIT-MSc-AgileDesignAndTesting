@@ -27,6 +27,15 @@ class DiceTest {
 		PairOfDice pairOfDice1 = new PairOfDice();
 		Player player1 = new Player("Test");
 		DiceRollerApp diceRollerApp = new DiceRollerApp();
+		
+		// Added to clear warnings
+		assertEquals(0, die1.getValue());
+		assertTrue(game1 instanceof Game);
+		assertTrue(pairOfDice1.getValue1() == 0);
+		assertTrue(pairOfDice1.getValue2() == 0);
+		assertTrue(pairOfDice1.getSum() == 0);
+		assertEquals("Test", player1.getName());
+		assertTrue(diceRollerApp instanceof DiceRollerApp);
 	}
 
 	@Test

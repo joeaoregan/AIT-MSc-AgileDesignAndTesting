@@ -5,7 +5,7 @@
  * L5S18-21
  * 11/10/2018
  */
-package com.ait.investment.wk7;
+package com.ait.ex7.investment;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -13,8 +13,6 @@ import static junitparams.JUnitParamsRunner.$;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.runner.RunWith;
-
-import com.ait.ex7.investment.InvestmentValue;
 
 @RunWith(JUnitParamsRunner.class)
 public class InvestmentValueTest {
@@ -51,33 +49,21 @@ public class InvestmentValueTest {
 		return new Integer[][] {{1},{2},{11},{12}};
 	}
 	
-	
-	
 	@Test
 	@Parameters(method="getValidInvestmentAmounts")
 	public void testValidInvestmentAmounts(int investment, int term, double finalAmount) {
 		assertEquals(finalAmount, InvestmentValue.calculateInvestmentValue(term,investment),0.01);
 	}
 	
-	@Test
-	@Parameters(method="getValidInvestmentAmounts")
-	public void testValidTermLength(int investment, int term, double finalAmount) {
-		assertEquals(finalAmount, InvestmentValue.calculateInvestmentValue(term,investment),0.01);
-	}
-
-	
 	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "getInvalidTermAmounts")
 	public void testThrowIAEForInvalidTerm(int term) {
 		InvestmentValue.calculateInvestmentValue(term, VALID_INVESTMENT);
 	}
-//	
+
 	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "getInvalidInvestmentAmounts")
 	public void testThrowIAEForInvalidInvestmentAmount(int startAmount) {
 		InvestmentValue.calculateInvestmentValue(VALID_TERM, startAmount);
 	}
-	
-	
-
 }

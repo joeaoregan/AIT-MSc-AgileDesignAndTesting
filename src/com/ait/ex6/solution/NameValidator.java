@@ -1,4 +1,4 @@
-package com.ait.ex6_solution;
+package com.ait.ex6.solution;
 
 //Check that name length is between 3 and 20 chars
 //Check that name only contains characters

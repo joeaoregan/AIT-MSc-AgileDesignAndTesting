@@ -1,7 +1,10 @@
-package com.ait.ex1.investment;
+/*
+ * Exercise 5
+ * Repeat Exercise 1 and Exercise 2 using parameterised tests.
+ */
+package com.ait.ex5;
 
-public class InvestmentValueJOR {
-
+public class InvestmentValue {
 	
 	public static double calculateInvestmentValue(int term, int startAmount) {
 		double annualInterestRate = 0.02;
@@ -20,5 +23,4 @@ public class InvestmentValueJOR {
 		
 		return totalAmount;
 	}
-
 }
