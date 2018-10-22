@@ -1,6 +1,7 @@
 /*
  * L5S60
  * Mockito - specify return values
+ * Instead of returning the default value of false, you can set it to return true
  * 11/10/2018
  */
 package main.java.com.cars;

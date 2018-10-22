@@ -1,6 +1,7 @@
 /*
  * L5S62
  * Mockito - Verification
+ * If we want to check did our class call a method
  * 11/10/2018
  */
 package main.java.com.cars;
@@ -15,10 +16,9 @@ class MockitoVerificationTest {
 	
 	@Test
 	public void testVerification() {
-		myFerrari.driveTo("Belfast");
+		myFerrari.driveTo("Belfast");	// Calling methods of the test double
 		myFerrari.needsFuel();
-		verify(myFerrari).driveTo("Belfast");
+		verify(myFerrari).driveTo("Belfast");	// Checking methods have been called
 		verify(myFerrari).needsFuel();
 	}
-
 }
